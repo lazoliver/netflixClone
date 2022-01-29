@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import tmdb from './tdmb';
 
 export default () => {
+
+  const [ movieList, setMovieList ] = useState([]);
 
   useEffect(() => {
     const loadAll = async () => {
       /* pegar a lista */
       let list = await tmdb.getHomeList();
-      console.log(list);
+      setMovieList(list);
     }
 
     loadAll();

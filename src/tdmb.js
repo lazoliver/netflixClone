@@ -34,32 +34,32 @@ export default {
             {
                 slug: "toprated",
                 title: "Em alta",
-                items: await basicFetch(`/movie/top_rate?language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/trending/all/day?api_key=${API_KEY}&language=pt-BR`)
             },
             {
                 slug: "action",
                 title: "Ação",
-                items: await basicFetch(`/discovery/movies?with_genres=28&language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?api_key=${API_KEY}&sort_by=genres_ids=28&language=pt-BR`)
             },
             {
                 slug: "comedy",
                 title: "Comédia",
-                items: await basicFetch(`/discovery/movies?with_genres=35&language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?api_key=${API_KEY}&sort_by=genres_ids=35&language=pt-BR`)
             },
             {
                 slug: "horror",
                 title: "Terror",
-                items: await basicFetch(`/discovery/movies?with_genres=27&language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?api_key=${API_KEY}&sort_by=genres_ids=27&language=pt-BR`)
             },
             {
                 slug: "romance",
                 title: "Romance",
-                items: await basicFetch(`/discovery/movies?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?api_key=${API_KEY}&sort_by=genres_ids=10749&language=pt-BR`)
             },
             {
                 slug: "documentary",
                 title: "Documentário",
-                items: await basicFetch(`/discovery/movies?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?api_key=${API_KEY}&sort_by=genres_ids=99&language=pt-BR`)
             },
         ]
     }

@@ -13,3 +13,14 @@ body {
 .lists {
     margin-top: -150px;
 }
+
+.footer {
+    margin: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none
+}

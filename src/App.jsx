@@ -57,6 +57,15 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <footer className="footer">
+        Feito por <span role="img" aria-label="coração">❤️</span> por Wilian S. de Oliveira<br />
+        <a href="https://www.linkedin.com/in/wilian-silva-de-oliveira-642387205" target="_blank" alt="LinkedIn">LinkedIn </a>
+        <a href="https://github.com/lazoliver" target="_blank" alt="LinkedIn">GitHub</a><br />
+        Todos os direitos reservados para Netflix.com<br />
+        Dados retirados de Themoviedb.org<br />
+        Desenvolvimento seguindo as aulas da B7WEB
+      </footer>
     </div>
   )
 }
